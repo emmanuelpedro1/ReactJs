@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../style.css';
-import Card from '../ItemListContainer/ItemListContainer'
 
 
 
@@ -17,7 +16,7 @@ export default function NavBar() {
                         </div>
                     </nav>
                 </section>
-<Card></Card>
+
 
     </div>
   );
