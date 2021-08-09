@@ -1,14 +1,17 @@
 import React from 'react'
 import NavBar from './components/NavBar/NavBar';
 import './style.css';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import ItemListContainer2 from './components/ItemListContainer/ItemListContainer2'
+
+
 
 
 export default function App() {
   return (
     <div>
       <NavBar />
-      <ItemListContainer></ItemListContainer>
+      <ItemListContainer2/> 
+     
     </div>
   );
 }
