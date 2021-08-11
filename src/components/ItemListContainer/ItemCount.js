@@ -4,13 +4,16 @@ function Contador() {
 const [counter, setCounter] = useState(0);
 
 const sumar = () =>{
-   
-setCounter(counter +1)
+    if( counter <5 && counter >0){
+
+setCounter(counter +1)}
 }
 const resta = () =>{
+  if(counter <0 && counter >5){
 
-    setCounter(counter -1)
+    setCounter(counter -1)}
 }
+
 return(
     <div>
         Stock: {counter} 

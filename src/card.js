@@ -34,9 +34,12 @@ export default function CardStock({products:{id,precio, producto, descripcion, i
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
+
+
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
+
 
   return (
     <Card className={classes.root}>
@@ -47,7 +50,7 @@ export default function CardStock({products:{id,precio, producto, descripcion, i
       <CardMedia
         className={classes.media}
         image={imagen}
-        title="Paella dish"
+        
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
@@ -71,9 +74,9 @@ export default function CardStock({products:{id,precio, producto, descripcion, i
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>Method:</Typography>
           <Typography paragraph>
             <ItemCount></ItemCount>
+ 
           </Typography>
 
         </CardContent>
